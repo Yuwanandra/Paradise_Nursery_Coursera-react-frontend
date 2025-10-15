@@ -1,8 +1,13 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // The crucial change: sets the base public path when served in production
+  base: '/', 
   plugins: [react()],
-  base: '/Paradise_Nursery_Coursera-react-frontend/', // 👈 Required for GitHub Pages
-})
+  build: {
+    // Ensures the base is respected in the final output
+    outDir: 'dist', 
+  }
+});

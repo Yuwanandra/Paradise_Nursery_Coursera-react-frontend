@@ -2,13 +2,13 @@
   "name": "paradise-nursery-redux-final",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://yuwanandra.github.io/Paradise_Nursery_Coursera-react-frontend/",
+  "homepage": "https://yuwanandra.github.io/Paradise_Nursery_Coursera-react-frontend",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "GH_REPO='https://github.com/Yuwanandra/Paradise_Nursery_Coursera-react-frontend.git' gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
